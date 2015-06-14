@@ -34,6 +34,7 @@ highest<-arrange(activity_pattern,desc(interval_steps))
 highest[1,]
 ```
 ## Imputing missing values
+The stategy used for imputing missing values is to relpace NA's with the mean number of steps for each interval from the previous computation. 
 ```{r imputing missing values ,echo=TRUE}
 nas<-is.na(data["steps"])
 sum(nas)

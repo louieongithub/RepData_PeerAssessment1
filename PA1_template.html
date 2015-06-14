@@ -241,6 +241,8 @@ highest[1,]
 
 <h2>Imputing missing values</h2>
 
+<p>The stategy used for imputing missing values is to relpace NA&#39;s with the mean number of steps for each interval from the previous computation. </p>
+
 <pre><code class="r">nas&lt;-is.na(data[&quot;steps&quot;])
 sum(nas)
 </code></pre>

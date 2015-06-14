@@ -81,6 +81,7 @@ highest[1,]
 ## 1      835       206.1698
 ```
 ## Imputing missing values
+The stategy used for imputing missing values is to relpace NA's with the mean number of steps for each interval from the previous computation. 
 
 ```r
 nas<-is.na(data["steps"])
